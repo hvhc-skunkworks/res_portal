@@ -69,8 +69,9 @@ $result = $conn->query($sql);
                             <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                 <thead>
                                     <tr>
-                                        <th class="col-xs-4">Title</th>
-                                        <th class="col-xs-4">Description</th>
+                                        <th class="col-xs-2">File Type</th>
+                                        <th class="col-xs-3">Title</th>
+                                        <th class="col-xs-3">Description</th>
                                         <th class="col-xs-2">Resource Category</th>
                                         <th class="col-xs-2">Source System</th>
                                     </tr>
@@ -83,7 +84,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<td><a href=\"" . $row["url"] . "\" download>" . $row["title"] . "</a></td><td>" . $row["descr"]. "</td><td>" . $row["rtype"] . "</td><td>" . $row["src"] . "</td></tr>";
+        echo "<td><center><img class=\"icon\" src=\"http://localhost:8888/wordpress/wp-content/themes/twentytwelve/icons/format_pdf.svg\" width=\"20\"></center></td><td><a href=\"" . $row["url"] . "\" download>" . $row["title"] . "</a></td><td>" . $row["descr"]. "</td><td>" . $row["rtype"] . "</td><td>" . $row["src"] . "</td></tr>";
     }
 } else {
     echo "0 results";
