@@ -1,0 +1,21 @@
+.btn-group {
+    margin-right: 40px;
+}
+.dataTables_wrapper {
+    margin-top: 40px;
+}
+.dropdown-menu {
+    padding: 10px;
+}
+.dropdown-divider {
+    margin-top: 10px;
+}
+.dataTables_wrapper .dataTables_length {
+    float: left;
+    margin-bottom: 40px;
+}
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+    margin-bottom: 40px;
+}
